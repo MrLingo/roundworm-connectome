@@ -18,5 +18,5 @@ By dividing his connectome in different regions (neural nets) i made my task a l
 These neural nets are not isolated, there are 3 neurons that each network has for bridging the communication gap between them. Once the neural circuitry is established, every neuron (except the 3 above) choose it's own axon and get 'assigned' with dendrites automatically among it's network. Now the worm activates part of his circuitry, depending on his actions inside a deterministic and discrete environment (grid system), that includes obstacles, food, other worms, oxygen and poison.
 
 
-# Research and pictures sources:
+## Research and pictures sources:
 Cornelia I. Bargmann, Rockefeller University; WormAtlas; Nature
