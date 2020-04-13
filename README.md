@@ -7,7 +7,7 @@ This organism's connectome is the most researched and now completely understood 
 
 ![Image description](images/celegans.jpg)
 
-By dividing his connectome in different regions (neural nets) i made my task a lot easier, like so. 
+By dividing his connectome in different regions (neural nets) i made my task a lot easier. 
 
 - Motor neurons
 - Connector neurons
