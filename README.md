@@ -5,7 +5,9 @@ This organism's connectome is the most researched and now completely understood 
 - It senses external stimuli like light, food, oxygen, noxious stimuli, pheromones
 - It has basic social behaviour
 
-![Image description](images/celegans.jpg)
+<p align="center">
+  <img width="460" height="300" src="images/celegans.jpg">
+</p>
 
 By dividing his connectome in different regions (neural nets) i made my task a lot easier. 
 
