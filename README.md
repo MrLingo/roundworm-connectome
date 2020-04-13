@@ -20,5 +20,5 @@ These neural nets are not isolated, there are 3 neurons that each network has fo
 I used files from the OpenWorm project to map each neuron to it's name and corresponding neurotransmitter.
 
 ## Research and pictures sources:
-Cornelia I. Bargmann, Rockefeller University; WormAtlas; Nature 
+Cornelia I. Bargmann, Rockefeller University; WormAtlas; Nature  
 https://openworm.org/index.html
