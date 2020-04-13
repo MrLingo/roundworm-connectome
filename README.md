@@ -2,7 +2,7 @@
 An attempt to simulate the whole neural circuitry of the roundworm C. elegans and it's 302 neurons. Of course, there is a part of randomness and personal configuration, because of the complexity of the connections (tracing each and every connection), but the overall idea is the same.
 This organism's connectome is the most researched and now completely understood by scientists, which makes it an interesting idea for a project of this kind. As a simple creature it has just a few trivial functions that it executes to survive: 
 - It moves
-- It senses food, oxygen, noxious stimuli, pheromones
+- It senses external stimuli like light, food, oxygen, noxious stimuli, pheromones
 - It has basic social behaviour
 
 ![Image description](images/celegans.jpg)
