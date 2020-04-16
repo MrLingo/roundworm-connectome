@@ -1,6 +1,5 @@
 # C.elegans connectome
 An attempt to simulate the whole neural circuitry of the roundworm C. elegans and it's 302 neurons. 
-
 His connectome is classified in main three group of neurons as follows:
 
 - Motor neurons
