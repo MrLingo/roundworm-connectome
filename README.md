@@ -8,7 +8,7 @@ His connectome is classified in main three group of neurons as follows:
 
 ![Image description](images/celegans_neural_map.jpg)
 
-For now the whole network have random connections and every neuron choose it's own axon and get 'assigned' with dendrites automatically. Now the worm activates part of his circuitry, depending on his actions inside a deterministic and discrete environment (grid system), that includes obstacles, food, other worms, oxygen and poison.
+For now the whole network have random connections and every neuron choose it's own axon and get 'assigned' with dendrites automatically. The worm then, activates part of his circuitry, depending on his actions inside a deterministic and discrete environment (grid system), that includes obstacles, food, other worms, oxygen and poison.
 
 I used files from the OpenWorm project to map each neuron to it's name and corresponding neurotransmitter.
 
