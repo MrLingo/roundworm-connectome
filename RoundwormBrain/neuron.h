@@ -11,11 +11,11 @@ using namespace std;
 class Neuron {
     string name;
     string neuroTransmitter;
-    string axon;
+    string axon = "";
     vector<Neuron> dendrites;
     int signalStrength = 0;
     int weight = 0;
-    int thresholdPotential = 20;
+    int thresholdPotential = 5;
     bool isRelayNeuron;
 
     public:
@@ -81,12 +81,12 @@ class Neuron {
         return false;
     }
 
-   Neuron getNextNeuron(vector<Neuron> neuronBatch){
+   Neuron getNextNeuron(vector<Neuron> neurons){
         if (calculateSignalStrength() == true){
             // Search neuron by name.
-            for(unsigned long long i = 0; i < neuronBatch.size(); i++){
-                if(neuronBatch[i].getName() == this->getAxonConnection()){
-                    return neuronBatch[i];
+            for(unsigned long long i = 0; i < neurons.size(); i++){
+                if(neurons[i].getName() == this->getAxonConnection()){
+                    return neurons[i];
                 }
             }
         }

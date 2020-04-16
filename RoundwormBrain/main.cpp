@@ -13,28 +13,37 @@ vector<Neuron> createNeuralNet(vector<Neuron> neuronBatch){
     for(unsigned long long i = 0; i < neuronBatch.size(); i++){
         do {
             possibleAxonIndex = rand() % neuronBatch.size();
-            // Make sure the first check is correct.
-            if (neuronBatch[i].getName() != neuronBatch[possibleAxonIndex].getName())
+            // Make sure a neuron don't connect to itself.
+            if(neuronBatch[i].getName() != neuronBatch[possibleAxonIndex].getName()){
                 neuronBatch[i].setAxonConnection(neuronBatch[possibleAxonIndex]);
                 // Set dendrite.
                 neuronBatch[possibleAxonIndex].addDendrite(neuronBatch[i]);
+            }
         } while(neuronBatch[i].getName() == neuronBatch[possibleAxonIndex].getName());
     }
 
     return neuronBatch;
 }
 
-// Adjust signal strength based on the importance of the stimuli. E.g moving backwards = more weights to Acetylcholine connections (senses touch/anxiety). Food = dopamine etc. (REFACTOR)
-vector<Neuron> getActivatedNeurons(vector<Neuron> neurons, vector<Neuron> neuralNet){
+
+vector<Neuron> getActivatedNeurons(Neuron startingNeuron, vector<Neuron> neurons, string neuroTransmitter, short numOfNeurons){
     vector<Neuron> activatedNeurons;
-    unsigned long long counter = 0;
-    while(counter < neurons.size()){
-        Neuron nextNeuron = neuralNet[counter].getNextNeuron(neurons);
-        activatedNeurons.push_back(nextNeuron);
+    short counter = 0;
+    Neuron currentNeuron = startingNeuron;
+
+    while(counter < numOfNeurons){
+        if(currentNeuron.getNeuroTransmitter() == neuroTransmitter){
+            activatedNeurons.push_back(currentNeuron);
+
+            // Assures activation/firing.
+            currentNeuron.setSignal(10);
+            currentNeuron = currentNeuron.getNextNeuron(neurons);
+        }
         counter++;
     }
     return activatedNeurons;
 }
+
 
 int main(int argc, char *argv[])
 {
